@@ -71,3 +71,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Guides
+
+### Modules
+
+creating resources via nest-cli will enforce dependencies, proper folder strucutre, and naming conventions
+
+- create a module using nest-clis `nest g module name-of-module`
+- create a controller using nest-clis `nest g controller name-of-controller`
+- create a service using nest-clis `nest g service name-of-service`
+- create entire resource (entire CRUD) using nest-clis `nest g resource name-of-resource`
