@@ -82,3 +82,14 @@ creating resources via nest-cli will enforce dependencies, proper folder strucut
 - create a controller using nest-clis `nest g controller name-of-controller`
 - create a service using nest-clis `nest g service name-of-service`
 - create entire resource (entire CRUD) using nest-clis `nest g resource name-of-resource`
+
+### Controllers
+
+controllers can be simply created using the basic http request via decorators
+
+- import { Body, Delete, Get, Param, Post, Put, Query, } from '@nestjs/common';
+- decorators can accept additional parameters such as ID
+- to acceess the parameters in the decorators, you have to declare another decorator inside the method, `@Param('param-name')`
+- query on the other hand dont need to go through the decorator, it can declare inside of a method directly `@Query('query-name)`.
+- dto folder and files are responsible for creating type for POST requests
+- post/put requests also need additional decorator inside the method which is the `@Body() createDto: CreateDto` decorator
