@@ -93,3 +93,12 @@ controllers can be simply created using the basic http request via decorators
 - query on the other hand dont need to go through the decorator, it can declare inside of a method directly `@Query('query-name)`.
 - dto folder and files are responsible for creating type for POST requests
 - post/put requests also need additional decorator inside the method which is the `@Body() createDto: CreateDto` decorator
+
+### Services and Providers
+
+Services and Providers allow you to create a logic that can be used for controller, services typically manipulates a collection of data depends on what instruction you provided
+
+- allows you to create multiple methods with different logics to manipulate data
+- common methods that are included to services are the CRUD logic
+- to use services, you have to instantiate it to your controller method
+- but the most convenient way to instantiate it is to craete a constructor in the controller, this become possible due to the `@Injectable()` decorator declared for the services
