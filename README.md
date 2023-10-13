@@ -102,3 +102,11 @@ Services and Providers allow you to create a logic that can be used for controll
 - common methods that are included to services are the CRUD logic
 - to use services, you have to instantiate it to your controller method
 - but the most convenient way to instantiate it is to craete a constructor in the controller, this become possible due to the `@Injectable()` decorator declared for the services
+
+### Excecption Handling
+
+There are lots of error handling built in in NestJS
+
+- common use is the try catch with the built in exception `NotFoundException();`
+- the documentation provides all the HTTP exceptions
+- you can also create a custom exception
