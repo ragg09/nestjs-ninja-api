@@ -120,3 +120,9 @@ This is a very simple function, usually used to transform input data to desired 
 - another usage of pipe is to validate request body via installing `class-validator` and `class-transformer`
 - these packages will be reflected in `Body()` via using built-in decorator `ValidationPipe()`
 - you can use any package for validation its not restricted to the 2 mentioned packages
+
+### Guards
+
+Guards in NestJS work in a similar way as in general programming, but its implementation is tightly integrated with the NestJS framework. The responsibility of Guards is to allow or deny access to the NestJS endpoints.
+
+- it can be used for the whole controller or specific methods
