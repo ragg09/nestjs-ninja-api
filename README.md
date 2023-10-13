@@ -110,3 +110,13 @@ There are lots of error handling built in in NestJS
 - common use is the try catch with the built in exception `NotFoundException();`
 - the documentation provides all the HTTP exceptions
 - you can also create a custom exception
+
+### Pipes
+
+This is a very simple function, usually used to transform input data to desired form, basically parsing.
+
+- there are lots of built in pipes
+- you can also create custom pipe
+- another usage of pipe is to validate request body via installing `class-validator` and `class-transformer`
+- these packages will be reflected in `Body()` via using built-in decorator `ValidationPipe()`
+- you can use any package for validation its not restricted to the 2 mentioned packages
